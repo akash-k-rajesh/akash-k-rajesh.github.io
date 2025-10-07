@@ -3,42 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akash K. Rajesh - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Akash Kannankulangara Rajesh</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    header:hover {
+      transform: scale(1.02);
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; font-weight: 300; }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      text-align: left; /* left align the content */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      color: #2E7D32;
+    }
+
+    section p {
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .project a.button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    .project a.button:hover {
+      background-color: #388E3C;
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: color 0.3s, transform 0.2s;
+    }
+    .contact a:hover {
+      color: #2E7D32;
+      transform: translateY(-2px) scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 1.5rem; }
+      .project a.button { padding: 0.7rem 1.5rem; font-size: 0.95rem; }
+      header h1 { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Akash Kannankulangara Rajesh</h1>
     <p>Cloud & DevOps Enthusiast | AWS Practitioner</p>
   </header>
 
-  <section id="about">
+  <section class="about">
     <h2>About Me</h2>
     <p>I’m a passionate cloud enthusiast who loves learning by doing and solving real-world problems. I enjoy creating systems that are both functional and efficient, and my goal is to grow as a cloud professional while contributing to meaningful projects.</p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>AWS Infrastructure & Monitoring Project</h3>
-      
- <p>
-    Built an integrated AWS environment with <strong>EC2, EBS, S3, IAM roles</strong>, and <strong>CloudWatch monitoring</strong>. 
-    Implemented automated monitoring and logging using <strong>Bash shell scripts</strong> to handle file creation, permission checks, and log uploads to S3. 
-    The system tracks CPU, memory, and disk usage while ensuring secure access and management of resources.
-</p>
-      <a href="https://github.com/akash-k-rajesh/aws-mini-cloud-project/" target="_blank">View on GitHub</a>
-    </div>
+  <section class="project">
+    <h2>AWS Mini-Cloud Project</h2>
+    <p>Built an integrated AWS environment with EC2, EBS, S3, IAM roles, and CloudWatch monitoring. Implemented automated monitoring and logging using Bash shell scripts to handle file creation, permission checks, and log uploads to S3. The system tracks CPU, memory, and disk usage while ensuring secure access and management of resources.</p>
+    <a class="button" href="https://github.com/akash-k-rajesh/aws-mini-cloud-project/" target="_blank">View Project on GitHub</a>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: akashkr2127@gmail.com</p>
-    <p>Phone: +49 176 65636143</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/akash-k-r-675444257" target="_blank">Akash</a></p>
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Let's connect!</p>
+   <a href="mailto:akashkr2127@gmail.com">Email</a> |
+    <a href="https://www.linkedin.com/in/akash-k-r-675444257/" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/akash-k-rajesh" target="_blank">GitHub</a>
   </section>
+
+  <footer>
+    &copy; 2025 Akash Kannankulangara Rajesh
+  </footer>
+
 </body>
 </html>
-
-
-
